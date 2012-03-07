@@ -43,6 +43,7 @@ function fol_get_online($data, $params){
     }
     return BP_Core_User::get_users( $type, $per_page, $page, $user_id, $include, $search_terms, $populate_extras, $exclude, $meta_key, $meta_value );
 }
- 
-include ("custom-widget.php");
+
+if ( file_exists( dirname(__File__) . '/bpfol-custom-widget.php' ) )
+	include (dirname(__File__) . "/bpfol-custom-widget.php");
 ?>
