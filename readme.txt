@@ -3,7 +3,7 @@ Contributors: slaFFik, valant
 Tags: buddypress, friends, online, on-line
 Requires at least: WP 3.2 and BuddyPress 1.5
 Tested up to: WP 3.2.1 and BuddyPress 1.5.1
-Stable tag: 0.2.1
+Stable tag: 0.3
 
 Plugin will display on your Friends page a new tab called Online with a list of currently online friends.
 
@@ -27,6 +27,9 @@ None.
 Visit [CosyDale.com](http://cosydale.com/my-plugin-buddypress-friends-on-line.html) for more information.
 
 == Changelog ==
+
+= 0.3 =
+* Added widget to place in everywhere
 
 = 0.2.1 =
 * Fixing small bug
