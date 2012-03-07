@@ -44,3 +44,4 @@ Visit [CosyDale.com](http://cosydale.com/my-plugin-buddypress-friends-on-line.ht
 = 0.1 =
 * Plugin will add widget on Friends page with friends currently on-line.
 * Initial Release. 
+ 
