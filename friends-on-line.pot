@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BuddyPress Friends On-line (FOL) v0.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-11-04 00:43+0200\n"
-"PO-Revision-Date: 2011-11-04 00:44+0200\n"
+"POT-Creation-Date: 2012-03-07 14:03+0200\n"
+"PO-Revision-Date: 2012-03-07 14:03+0200\n"
 "Last-Translator: slaFFik <slaffik@list.ru>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -13,11 +13,60 @@ msgstr ""
 "X-Poedit-Language: Russian\n"
 "X-Poedit-Country: RUSSIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;__ngettext_noop:1,2;_c\n"
-"X-Poedit-Basepath: W:\\_server\\home\\ovi\\ab\\wp-content\\plugins\\buddypress-friends-on-line\n"
-"X-Poedit-SearchPath-0: W:\\_server\\home\\ovi\\ab\\wp-content\\plugins\\buddypress-friends-on-line\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ./\n"
+"X-Poedit-SearchPath-0: .\n"
 
-#: W:\_server\home\ovi\ab\wp-content\plugins\buddypress-friends-on-line/bp-friends-on-line.php:24
+#: bp-friends-on-line.php:24
 msgid "Online"
+msgstr ""
+
+#: bpfol-custom-widget.php:16
+#: bpfol-custom-widget.php:81
+msgid "Friends on-line"
+msgstr ""
+
+#: bpfol-custom-widget.php:19
+msgid "Friends on-line widget"
+msgstr ""
+
+#: bpfol-custom-widget.php:51
+msgid "No friends on-line."
+msgstr ""
+
+#: bpfol-custom-widget.php:97
+msgid "Title:"
+msgstr ""
+
+#: bpfol-custom-widget.php:99
+msgid "View mode"
+msgstr ""
+
+#: bpfol-custom-widget.php:101
+msgid "standart"
+msgstr ""
+
+#: bpfol-custom-widget.php:102
+msgid "only avatar"
+msgstr ""
+
+#: bpfol-custom-widget.php:106
+msgid "Standart mode settings:"
+msgstr ""
+
+#: bpfol-custom-widget.php:108
+msgid "Display avatar"
+msgstr ""
+
+#: bpfol-custom-widget.php:110
+msgid "Display name"
+msgstr ""
+
+#: bpfol-custom-widget.php:112
+msgid "Display last active date"
+msgstr ""
+
+#: bpfol-custom-widget.php:115
+msgid "Number of friends:"
 msgstr ""
 
