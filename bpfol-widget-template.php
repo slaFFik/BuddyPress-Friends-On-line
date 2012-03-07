@@ -1,4 +1,4 @@
-	<?php // do_action( 'bp_before_directory_members_list' ); ?>
+<?php if($instance['view_mode'] == 'standart'):?>
 	<ul id="members-list" class="item-list" role="main">
 	<?php while ( bp_members() ) : bp_the_member(); ?>
 		<li>
@@ -21,15 +21,12 @@
 		</li>
 	<?php endwhile; ?>
 	</ul>
-	
-	<?php //bp_member_hidden_fields(); ?>
-	<!--
-	<div id="pag-bottom" class="pagination">
-		<div class="pag-count" id="member-dir-count-bottom">
-			<?php //bp_members_pagination_count(); ?>
-		</div>
-		<div class="pagination-links" id="member-dir-pag-bottom">
-			<?php //bp_members_pagination_links(); ?>
-		</div>
+<?php elseif($instance['view_mode'] == 'only_avatar'):?>
+	<div class="avatar-block">
+		<?php while ( bp_members() ) : bp_the_member(); ?>
+			<div class="item-avatar">
+				<a href="<?php bp_member_permalink() ?>" title="<?php bp_member_name() ?>"><?php bp_member_avatar() ?></a>
+			</div>
+		<?php endwhile; ?>
 	</div>
-	-->
+<?php endif;?>

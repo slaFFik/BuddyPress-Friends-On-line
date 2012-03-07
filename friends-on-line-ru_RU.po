@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: BuddyPress Friends On-line (FOL) v0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-07 12:45+0200\n"
-"PO-Revision-Date: 2012-03-07 12:47+0200\n"
+"POT-Creation-Date: 2012-03-07 13:48+0200\n"
+"PO-Revision-Date: 2012-03-07 13:50+0200\n"
 "Last-Translator: Rus\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgid "Online"
 msgstr "В сети"
 
 #: Z:\home\bptest\www\wp-content\plugins\buddypress-friends-on-line/bpfol-custom-widget.php:16
-#: Z:\home\bptest\www\wp-content\plugins\buddypress-friends-on-line/bpfol-custom-widget.php:80
+#: Z:\home\bptest\www\wp-content\plugins\buddypress-friends-on-line/bpfol-custom-widget.php:81
 msgid "Friends on-line"
 msgstr "Друзья в сети"
 
@@ -34,23 +34,39 @@ msgstr "Виджет отобравжения друзей в сети"
 msgid "No friends on-line."
 msgstr "Нет друзей в сети"
 
-#: Z:\home\bptest\www\wp-content\plugins\buddypress-friends-on-line/bpfol-custom-widget.php:94
+#: Z:\home\bptest\www\wp-content\plugins\buddypress-friends-on-line/bpfol-custom-widget.php:97
 msgid "Title:"
 msgstr "Название виджета:"
 
-#: Z:\home\bptest\www\wp-content\plugins\buddypress-friends-on-line/bpfol-custom-widget.php:96
+#: Z:\home\bptest\www\wp-content\plugins\buddypress-friends-on-line/bpfol-custom-widget.php:99
+msgid "View mode"
+msgstr "Режим отображения"
+
+#: Z:\home\bptest\www\wp-content\plugins\buddypress-friends-on-line/bpfol-custom-widget.php:101
+msgid "standart"
+msgstr "стандартный"
+
+#: Z:\home\bptest\www\wp-content\plugins\buddypress-friends-on-line/bpfol-custom-widget.php:102
+msgid "only avatar"
+msgstr "Только аватар"
+
+#: Z:\home\bptest\www\wp-content\plugins\buddypress-friends-on-line/bpfol-custom-widget.php:106
+msgid "Standart mode settings:"
+msgstr "Настройки стандартного режима:"
+
+#: Z:\home\bptest\www\wp-content\plugins\buddypress-friends-on-line/bpfol-custom-widget.php:108
 msgid "Display avatar"
 msgstr "Показать аватар"
 
-#: Z:\home\bptest\www\wp-content\plugins\buddypress-friends-on-line/bpfol-custom-widget.php:99
+#: Z:\home\bptest\www\wp-content\plugins\buddypress-friends-on-line/bpfol-custom-widget.php:110
 msgid "Display name"
 msgstr "Показать имя"
 
-#: Z:\home\bptest\www\wp-content\plugins\buddypress-friends-on-line/bpfol-custom-widget.php:102
+#: Z:\home\bptest\www\wp-content\plugins\buddypress-friends-on-line/bpfol-custom-widget.php:112
 msgid "Display last active date"
 msgstr "Показать дату последней активности"
 
-#: Z:\home\bptest\www\wp-content\plugins\buddypress-friends-on-line/bpfol-custom-widget.php:104
+#: Z:\home\bptest\www\wp-content\plugins\buddypress-friends-on-line/bpfol-custom-widget.php:115
 msgid "Number of friends:"
 msgstr "Количество друзей:"
 
