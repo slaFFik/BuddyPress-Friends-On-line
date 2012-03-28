@@ -4,20 +4,16 @@ Plugin Name: BuddyPress Friends On-line (FOL)
 Plugin URI: http://cosydale.com/my-plugin-buddypress-friends-on-line.html
 Description: Plugin will display on your Friends page a new tab called Online with a list of currently online friends.
 Author: slaFFik
-Version: 0.4
+Version: 0.4.1
 Author URI: http://ovirium.com/
 */
-
-/**
- * Adding language support.
- */
-if ( file_exists( dirname(__File__) . '/friends-on-line-' . get_locale() . '.mo' ) )
-	load_textdomain( 'friends-on-line', dirname(__File__) . '/friends-on-line-' . get_locale() . '.mo' );
 
 add_action('bp_init', 'fol_menu');
 function fol_menu(){
     global $bp;
 
+    load_plugin_textdomain( 'fol', false, dirname( plugin_basename( __FILE__ ) ) . '/langs/' );
+    
     $friends_link = trailingslashit( $bp->loggedin_user->domain . bp_get_friends_slug() );
 
     $sub_nav = array(
@@ -38,7 +34,7 @@ add_filter('bp_core_get_users', 'fol_get_online', 10, 2);
 function fol_get_online($data, $params){
     extract( $params, EXTR_SKIP );
     if(bp_is_user_friends() && bp_is_current_action( 'online') ){
-        $type = 'online';
+        $type    = 'online';
         $user_id = bp_loggedin_user_id();
     }
     return BP_Core_User::get_users( $type, $per_page, $page, $user_id, $include, $search_terms, $populate_extras, $exclude, $meta_key, $meta_value );

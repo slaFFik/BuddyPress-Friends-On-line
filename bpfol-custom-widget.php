@@ -7,7 +7,7 @@ if (!class_exists('FOL_Widget')) :
  */
 	class FOL_Widget extends WP_Widget {
 		/*
-		 * Construcotr
+		 * Constructor
 		 */
 		function FOL_Widget() {
 			// Create the widget
@@ -78,21 +78,21 @@ if (!class_exists('FOL_Widget')) :
 
 			// Set up some default widget settings
 			$defaults = array(
-				'title' => __('Friends on-line', 'fol'),
-				'view_mode' => 'standart',
-				'display_avatar' => 1,
-				'display_name' => 1,
+				'title'                 => __('Friends on-line', 'fol'),
+				'view_mode'             => 'standart',
+				'display_avatar'        => 1,
+				'display_name'          => 1,
 				'display_last_activity' => 0,
-				'friends_number' => 6
+				'friends_number'        => 6
 			);
 			
-			$instance = wp_parse_args((array) $instance, $defaults);
-			$title = strip_tags($instance['title']);
-			$view_mode = empty($instance['view_mode'])? $defaults['friends_number'] : $instance['view_mode'];
-			$display_avatar = $instance['display_avatar'] ? 'checked="checked"' : '';
-			$display_name = $instance['display_name'] ? 'checked="checked"' : '';
-			$display_last_activity = $instance['display_last_activity'] ? 'checked="checked"' : '';
-			$friends_number = (empty($instance['friends_number']) && is_numeric($instance['friends_number']))? $defaults['friends_number'] : $instance['friends_number'];
+			$instance               = wp_parse_args((array) $instance, $defaults);
+			$title                  = strip_tags($instance['title']);
+			$view_mode              = empty($instance['view_mode'])? $defaults['friends_number'] : $instance['view_mode'];
+			$display_avatar         = $instance['display_avatar'] ? 'checked="checked"' : '';
+			$display_name           = $instance['display_name'] ? 'checked="checked"' : '';
+			$display_last_activity  = $instance['display_last_activity'] ? 'checked="checked"' : '';
+			$friends_number         = (empty($instance['friends_number']) && is_numeric($instance['friends_number']))? $defaults['friends_number'] : $instance['friends_number'];
 			?>
 			<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'fol'); ?></label> <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></p>
 			<p>
@@ -113,14 +113,13 @@ if (!class_exists('FOL_Widget')) :
 				</p>
 			</fieldset>
 			<p><label for="<?php echo $this->get_field_id('friends_number'); ?>"><?php _e('Number of friends:', 'fol'); ?></label> <input class="widefat" id="<?php echo $this->get_field_id('friends_number'); ?>" name="<?php echo $this->get_field_name('friends_number'); ?>" type="text" value="<?php echo esc_attr($friends_number); ?>" /></p>
-			<?php 
-			
+			<?php
 		}
 		
 	}
 endif;
 
-// Register the plugin/widget
+// Register the widget
 if (class_exists('FOL_Widget')) :
 
 	function loadFOLWidget() {
